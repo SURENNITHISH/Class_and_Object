@@ -1,0 +1,35 @@
+import java.io.*;
+class Rectangle
+{
+int length;
+int width;
+Rectangle(int a,int b)
+{
+length=a;
+width=b;
+}
+int rectangleArea()
+{
+int area;
+area=length*width;
+return area;
+}
+int rectangleperimeter()
+{
+int perimeter;
+perimeter=2*(length + width);
+return perimeter;
+}
+}
+class Rectangledemo1
+{
+public static void main(String[]args)
+{
+Rectangle r1=new Rectangle(10,5);
+System.out.println("Area of Rectangle="+ r1.rectangleArea());
+System.out.println("perimeter of Rectangle="+ r1.rectangleperimeter());
+Rectangle r2=new Rectangle(7,4);
+System.out.println("Area of Rectangle=" +r2.rectangleArea());
+System.out.println("perimeter of Rectangle="+ r2.rectangleperimeter());
+}
+} 
